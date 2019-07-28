@@ -1,0 +1,18 @@
+{% load solo_tags %}
+{% get_solo 'solotest.SiteConfiguration' as site_config %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Django Solo</title>
+</head>
+<body>
+    <div style="text-align: center">
+           <h1> {{ site_config.site_name }} </h1>
+                <P>{{ site_config.info }}</P>
+            
+           <h1> {{ site_config.branding }}</h1>
+        </div>
+</body>
+</html>
